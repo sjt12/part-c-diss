@@ -1,0 +1,39 @@
+\documentclass[a4paper, 12pt, oneside, onecolumn, openright]{mememoir}
+
+\input{use}
+\input{myfile}
+
+\begin{document}
+
+\input{title}
+
+\frontmatter
+\pagestyle{plain}
+
+\include{abstract}
+\include{dedicat}
+\include{acky}
+
+\tableofcontents*
+
+\mainmatter
+
+\chapterstyle{thesis}
+\pagestyle{sjt}
+
+
+\chapter{Introduction}
+\chaps{Introduction}
+\lipsum[12-23]
+
+\section{Introduce Some More}
+
+\lipsum[12]
+
+\section{Now what}
+
+\lipsum[42]
+
+
+
+\end{document}

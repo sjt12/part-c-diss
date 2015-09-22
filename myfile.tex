@@ -1,0 +1,52 @@
+%
+%Define fonts for prettiness
+%
+\newcommand{\nfont}{Adobe Caslon Pro}
+\newcommand{\ttfont}{Envy Code R}
+\newcommand{\sffont}{Optima Regular}
+\newcommand{\commodorefont}{Commodore 64 Pixeled}
+\defaultfontfeatures{Mapping=tex-text}
+\setromanfont[Ligatures={NoCommon,TeX}]{\nfont}
+\setmonofont[Scale=0.8]{\ttfont}
+\setsansfont[Scale=0.9]{\sffont}
+
+%
+%Oxford logo for title page
+%
+\def\logo{{\includegraphics[width=40mm]{oxlogo}}}
+	
+%
+%Define styles for section/subsection headings
+%
+\setsecheadstyle{\Large\raggedright}
+\setsubsecheadstyle{\Large\raggedright}
+
+%
+%Set line spacing
+%
+\OnehalfSpacing
+
+%
+%Set \rightmark to chapter title for headings
+%
+\newcommand{\chaps}[1]{\markright{\thechapter. #1}}
+
+%
+%DEDICATION - verse format
+%
+\newenvironment{dedication}
+{\thispagestyle{empty}
+  \begin{center}
+  \vspace*{1.5cm}
+  {\LARGE Dedication}
+  \end{center}
+  \vspace{0.5cm}
+  \begin{verse}\begin{center}}
+{\end{center}\end{verse}}
+
+%
+%ACKNOWLEDGEMENTS - just like abstract
+%
+\newenvironment{acky}
+{\renewcommand{\abstractname}{Acknowledgments}\abstract}
+{\endabstract}
