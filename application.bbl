@@ -1,0 +1,33 @@
+\begin{thebibliography}{1}
+
+\bibitem{GT}
+Reinhard Diestel.
+\newblock {\em Graph Theory}.
+\newblock Number 173 in Graduate Texts in Mathematics. Springer, third edition,
+  1997.
+\newblock [Chapter 6 in particular].
+
+\bibitem{lova}
+L\'{a}szl\'{o}~Mikl\'{o}s Lov\'{a}sz, Carsten Thomassen, Yezhou Wu, and
+  Cun-Quan Zhang.
+\newblock Nowhere-zero 3-flows and modulo k-orientations.
+\newblock {\em Journal of Combinatorial Theory, Series B}, 103(5):587 -- 598,
+  2013.
+
+\bibitem{thom}
+Carsten Thomassen.
+\newblock The weak 3-flow conjecture and the weak circular flow conjecture.
+\newblock {\em Journal of Combinatorial Theory, Series B}, 102(2):521 -- 529,
+  2012.
+
+\bibitem{T1}
+William~Thomas Tutte.
+\newblock A contribution to the theory of chromatic polynomials.
+\newblock {\em Canadian Journal of Mathematics}, 6:80--91, 1954.
+
+\bibitem{T2}
+William~Thomas Tutte.
+\newblock On the algebraic theory of graph colourings.
+\newblock {\em Journal of Combinatorial Theory}, 1:15--50, 1966.
+
+\end{thebibliography}
