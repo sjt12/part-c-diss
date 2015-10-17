@@ -1,0 +1,59 @@
+\documentclass[a4paper]{article}
+\usepackage{amsmath, amssymb}
+\usepackage[margin=2cm]{geometry}
+
+\openup 0.75em
+
+\begin{document}
+\setlength{\parindent}{0pt}
+
+\section{Introduction}
+
+Let $E$ be a finite set, a \textit{chain} on $E$ is a mapping $f$ of $E$ into $\mathbb{F}_2$
+
+If $x \in E$ then $fx$ is the \textit{coefficient} of $x$ in $f$
+
+Chains can be added to give new chains by adding coefficients for each $x \in E$
+
+Thus chains form an \textit{additive group}
+
+Any subgroup of this group is called a \textit{chain-group} on $E$
+
+The zero element in a chain group is the chain in which each coefficient is zero, this is the \textit{zero chain}
+
+Let $N$ be a chain-group on $E$, the elements of $E$ are \textit{cells} of $N$
+
+A cell $x$ is \textit{filled} if $fx = 1$ for some chain $f$ of $N$ and \textit{empty} otherwise
+
+$N$ is a \textit{full chain group} if it has no empty cells
+
+A colouring of $N$ is a pair $\{f,g\}$ of chains of $N$ such that for each $x \in E$ either $fx = 1$ or $gx = 1$
+
+$N$ is \textit{chromatic} if it has a colouring, and \textit{achromatic} otherwise
+
+A chromatic chain-group is necessarily full
+
+
+\section{The Cycles and Coboundaries of a Graph}
+
+An edge is a \textit{loop} if the ends are the same, a \textit{link} if the ends are different
+
+Graphs are assumed to be \textit{finite} - both $V(G)$ and $E(G)$ are finite sets
+
+A \textit{path} is a sequence $(a_0, A_1, a_1, A_2, a_2, \ldots, A_n, a_n)$ of vertices $a_i$ and edges $A_j$ such that:
+\begin{enumerate}
+\item If $1 \leq i \leq n$ the ends of $A_i$ are $a_{i-1}$ and $a_i$
+\item If $1 \leq i \leq n$ then $a_{i-1} = a_i$ iff $A_i$ is a loop
+\end{enumerate}
+
+If all terms in path are distinct, then the path is \textit{simple}
+
+If all terms are distinct except that $a_0 = a_n$, then the path is \textit{circular}
+
+
+
+
+
+
+
+\end{document}
