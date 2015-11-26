@@ -1,0 +1,50 @@
+\chapter{Seymour's 6-Flow Theorem}
+\chaps{Seymour's 6-Flow Theorem}
+
+{\lem For $k > 2$, let $G = (V,E)$ be a bridgeless graph with no nowhere-zero $k$-flow such that $G$ has $|V|+|E|$ minimal. Then $G$ is simple, cubic and 3-connected.}\\
+
+Suppose there were a loop $e$ in $G$, let $G' = G - e$. Any bridge in $G'$ would also be a bridge in $G$, so $G'$ must be bridgeless. Therefore, by the minimality of $G$, there must be a nowhere-zero $k$-flow $f$ on $G'$. But then we can extend $f$ to a nowhere-zero $k$-flow on $G$ by setting $f(e) = l$ for some $0 < l < k$, contradicting that $G$ has no such flow. Thus $G$ contains no loops. Now suppose there are vertices $v,w \in V$ with multiple edges $e_1, e_2, \ldots, e_n$ between them and let $G'' = G/e_1$. Again any bridge in $G''$ would be a bridge in $G$ so that $G''$ is bridgeless and by the minimality of $G$ has a nowhere-zero $k$-flow $f'$. We will construct a flow $f$ on $G$ from $f'$. For all $e \in E \setminus \{e_1,e_2\}$, define $f(e)=f'(e)$. Since $k > 2$, we can either increase or decrease $f'(e_2)$ by one such that $|f'(e_2)|$ remains strictly between $0$ and $k$. If we may increase $f'(e_2)$ by one then define $f(e_2) = f'(e_2) + 1$ and
+$$f(e_1) = \begin{cases} 1 & \text{if $e_1$ is oriented in the opposite direction to $e_2$} \\ -1 & \text{if $e_1$ is oriented in the same direction as $e_2$} \end{cases} $$
+Otherwise, define $f(e_2) = f'(e_2) - 1$ and set
+$$f(e_1) = \begin{cases} 1 & \text{if $e_1$ is oriented in the opposite direction to $e_2$} \\ -1 & \text{if $e_1$ is oriented in the same direction as $e_2$} \end{cases} $$
+Thus (with respect to $f'$) $f$ fixes the flow through all vertices except $v$ and $w$ and our construction ensures that at $v$ and $w$ any changes to the flow into the vertex is balanced by an equal and opposite change to the flow out of the vertex and vice versa. This ensures that $f$ obeys Kirchhoff's Law, as $f'$ does. In addition, $0 < |f(e)| < k$ for all $e \in E$, so $f$ is a nowhere-zero $k$-flow on $G$. This contradicts that $G$ has no such flow and so we have shown that $G$ must be simple.
+
+
+%\begin{tikzpicture}[x=1cm, y=2cm]
+%  \SetGraphUnit{3.5}
+%  \SetVertexMath
+%  \Vertex{v_1}
+%  \EA(v_1){v_2}
+%  \Edge[label = $e_2$](v_1)(v_2)
+%  \Edge[label = $e_{n-1}$](v_2)(v_1)
+%  %\Loop[dist = 4cm, dir = SO, label = 5](v_1.east)
+%  \tikzset{EdgeStyle/.append style = {bend left = 60}}
+%  \Edge[label = $e_1$](v_1)(v_2)
+%  \Edge[label = $e_n$](v_2)(v_1)
+%  \SetUpEdge[style=dotted]
+%  \tikzset{EdgeStyle/.append style = {bend left = 18}}
+%  \Edge (v_1)(v_2)
+%  \Edge (v_2)(v_1)
+%  \tikzset{EdgeStyle/.append style = {bend left = 12}}
+%  \Edge (v_1)(v_2)
+%  \Edge (v_2)(v_1)
+%  \tikzset{EdgeStyle/.append style = {bend left = 0}}
+%  \SetUpEdge[color=white]
+%  \tikzset{LabelStyle/.append style = {font = \tiny, fill=none}}
+%  \Edge[label = \rvdots](v_1)(v_2)
+%  \SetGraphUnit{1}
+%  \SetUpEdge[style=solid]  
+%  \WE[empty](v_1){1}
+%  \EA[empty](v_2){2}
+%  \SetGraphUnit{0.5}
+%  \NO[empty](1){1n}
+%  \SO[empty](1){1s}
+%  \NO[empty](2){2n}
+%  \SO[empty](2){2s}
+%  \Edge (v_1)(1)
+%  \Edge (v_1)(1n)
+%  \Edge (v_1)(1s)
+%  \Edge (v_2)(2)
+%  \Edge (v_2)(2n)
+%  \Edge (v_2)(2s)
+%\end{tikzpicture}

@@ -6,44 +6,44 @@ A level-1 auxiliary file: dedicat.aux
 A level-1 auxiliary file: acky.aux
 The style file: plain.bst
 Database file #1: biblio.bib
-You've used 6 entries,
+You've used 7 entries,
             2118 wiz_defined-function locations,
-            543 strings with 4665 characters,
-and the built_in function-call counts, 1687 in all, are:
-= -- 170
-> -- 58
+            551 strings with 4853 characters,
+and the built_in function-call counts, 1969 in all, are:
+= -- 199
+> -- 65
 < -- 1
-+ -- 26
-- -- 18
-* -- 114
-:= -- 300
-add.period$ -- 20
-call.type$ -- 6
-change.case$ -- 27
++ -- 29
+- -- 20
+* -- 132
+:= -- 348
+add.period$ -- 23
+call.type$ -- 7
+change.case$ -- 31
 chr.to.int$ -- 0
-cite$ -- 6
-duplicate$ -- 62
-empty$ -- 140
-format.name$ -- 18
-if$ -- 349
+cite$ -- 7
+duplicate$ -- 73
+empty$ -- 166
+format.name$ -- 20
+if$ -- 409
 int.to.chr$ -- 0
-int.to.str$ -- 6
-missing$ -- 6
-newline$ -- 34
-num.names$ -- 12
-pop$ -- 16
+int.to.str$ -- 7
+missing$ -- 7
+newline$ -- 39
+num.names$ -- 14
+pop$ -- 18
 preamble$ -- 1
-purify$ -- 21
+purify$ -- 24
 quote$ -- 0
-skip$ -- 38
+skip$ -- 45
 stack$ -- 0
-substring$ -- 116
-swap$ -- 6
+substring$ -- 142
+swap$ -- 7
 text.length$ -- 1
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 22
+type$ -- 26
 warning$ -- 0
-while$ -- 16
-width$ -- 7
-write$ -- 70
+while$ -- 19
+width$ -- 8
+write$ -- 81

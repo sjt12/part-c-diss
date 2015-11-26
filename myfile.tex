@@ -13,7 +13,7 @@
 %
 %Oxford logo for title page
 %
-\def\logo{{\includegraphics[width=40mm]{oxlogo}}}
+\def\logo{{\includegraphics[width=40mm]{./images/oxlogo}}}
 	
 %
 %Define styles for section/subsection headings
@@ -44,3 +44,25 @@
 \newenvironment{acky}
 {\renewcommand{\abstractname}{Acknowledgments}\abstract}
 {\endabstract}
+
+%
+%GRAPH SETUP
+%
+\GraphInit[vstyle = dijkstra]
+\tikzset{
+  LabelStyle/.style = {text = black, font = \bfseries },
+  VertexStyle/.append style = { inner sep=1pt,
+                                font = \bfseries, text=black},
+  EdgeStyle/.append style = {-, thick, bend left} }
+  
+%
+%AMSTHM SETUP
+%
+
+\theoremstyle{plain}
+\newtheorem{thm}{Theorem}[chapter] % reset theorem numbering for each chapter
+\newtheorem{lem}[thm]{Lemma}
+
+\theoremstyle{definition}
+\newtheorem{defn}[thm]{Definition} % definition numbers are dependent on theorem numbers
+\newtheorem{exmp}[thm]{Example} % same for example numbers

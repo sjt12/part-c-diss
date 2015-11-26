@@ -3433,7 +3433,21 @@
   \renewcommand{\printchapternum}{}
   \renewcommand{\afterchapternum}{}
   \renewcommand{\printchaptername}{}
-  \renewcommand{\afterchaptertitle}{\chapnumfont\hfill\thechapter\\\vspace*{-.3cm}\hrulefill\vspace*{3cm}\\}
+  \renewcommand{\afterchaptertitle}{\chapnumfont\hfill\thechapter\\\vspace*{-.3cm}\hrulefill\vspace*{1cm}\\}
+}
+
+\makechapterstyle{thesib}{%
+  \renewcommand{\chapternamenum}{}
+  \setlength{\beforechapskip}{0pt}
+  \setlength{\midchapskip}{0pt}
+  \setlength{\afterchapskip}{0pt}
+  \renewcommand{\chapnamefont}{\LARGE}
+  \renewcommand{\chapnumfont}{\chapnamefont}
+  \renewcommand{\chaptitlefont}{\chapnamefont}
+  \renewcommand{\printchapternum}{}
+  \renewcommand{\afterchapternum}{}
+  \renewcommand{\printchaptername}{}
+  \renewcommand{\afterchaptertitle}{\chapnumfont\\\vspace*{-.3cm}\hrulefill\vspace*{3cm}\\}
 }
 
 \makechapterstyle{veelo}{%
